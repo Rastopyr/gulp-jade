@@ -6,11 +6,11 @@
 
 <table>
 <tr>
-<td>Package</td><td>gulp-jade</td>
+<td>Package</td><td>gulp-jade-hbs</td>
 </tr>
 <tr>
 <td>Description</td>
-<td>Compile Jade templates</td>
+<td>Compile Jade templates into Handlebars</td>
 </tr>
 <tr>
 <td>Node Version</td>
@@ -20,10 +20,10 @@
 
 ## Usage
 
-Compile to HTML
+Compile to Handlebars
 
 ```javascript
-var jade = require('gulp-jade');
+var jade = require('gulp-jade-hbs');
 
 gulp.task('templates', function() {
   var YOUR_LOCALS = {};
@@ -39,7 +39,7 @@ gulp.task('templates', function() {
 Compile to JS
 
 ```javascript
-var jade = require('gulp-jade');
+var jade = require('gulp-jade-hbs');
 
 gulp.task('templates', function() {
   gulp.src('./lib/*.jade')
@@ -62,7 +62,7 @@ If you want to use a different version of jade, or define jade filters, you can 
 
 ```javascript
 var jade = require('jade');
-var gulpJade = require('gulp-jade');
+var gulpJadeHbs = require('gulp-jade-hbs');
 var katex = require('katex');
 
 jade.filters.katex = katex.renderToString;
@@ -72,7 +72,7 @@ jade.filters.shoutFilter = function (str) {
 
 gulp.task('jade', function () {
   return gulp.src('public/**/*.jade')
-    .pipe(gulpJade({
+    .pipe(gulpJadeHbs({
       jade: jade,
       pretty: true
     }))
@@ -143,7 +143,7 @@ More info on [gulp-data](https://www.npmjs.org/package/gulp-data)
 If you are trying to wrap your Jade template functions in an AMD wrapper, use [`gulp-wrap-amd`](https://github.com/phated/gulp-wrap-amd)
 
 ```javascript
-var jade = require('gulp-jade');
+var jade = require('gulp-jade-hbs');
 var wrap = require('gulp-wrap-amd');
 
 gulp.task('templates', function() {
