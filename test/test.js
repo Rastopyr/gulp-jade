@@ -26,7 +26,7 @@ var setData = function(){
 
 function expectStream(t, options){
   options = options || {};
-  var ext = options.client ? '.js' : '.html';
+  var ext = options.client ? '.js' : '.hbs';
   var compiler = options.client ? jade.compileClient : jade.compile;
   return through.obj(function(file, enc, cb){
     options.filename = filename;
