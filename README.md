@@ -1,4 +1,4 @@
-[![Build Status](https://travis-ci.org/phated/gulp-jade-hbs.png?branch=master)](https://travis-ci.org/phated/gulp-jade-hbs)
+[![Build Status](https://travis-ci.org/Rastopyr/gulp-jade-hbs.png?branch=master)](https://travis-ci.org/Rastopyr/gulp-jade-hbs)
 
 ## Information
 
