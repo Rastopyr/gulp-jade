@@ -1,6 +1,8 @@
-[![Build Status](https://travis-ci.org/phated/gulp-jade.png?branch=master)](https://travis-ci.org/phated/gulp-jade)
+[![Build Status](https://travis-ci.org/phated/gulp-jade-hbs.png?branch=master)](https://travis-ci.org/phated/gulp-jade-hbs)
 
 ## Information
+
+### This plugin is fork of [https://github.com/phated/gulp-jade](https://github.com/phated/gulp-jade)
 
 <table>
 <tr>

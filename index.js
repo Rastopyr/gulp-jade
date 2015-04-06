@@ -18,7 +18,7 @@ module.exports = function(options){
       opts.data = file.data;
     }
 
-    file.path = ext(file.path, opts.client ? '.js' : '.html');
+    file.path = ext(file.path, opts.client ? '.js' : '.hbs');
 
     if(file.isStream()){
       return cb(new PluginError('gulp-jade', 'Streaming not supported'));
