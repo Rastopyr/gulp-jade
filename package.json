@@ -8,8 +8,11 @@
     "stream",
     "compile"
   ],
-  "repository": "https://github.com/phated/gulp-jade.git",
-  "author": "Blaine Bublitz <blaine@iceddev.com>",
+  "repository": "https://github.com/Rastopyr/gulp-jade-hbs.git",
+  "authors": [
+    "Blaine Bublitz <blaine@iceddev.com>",
+    "Rastopyr <rastopyr@gmail.com>"
+  ],
   "dependencies": {
     "gulp-util": "^3.0.2",
     "jade": "1.1 - 1.9",
